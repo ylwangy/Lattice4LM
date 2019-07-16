@@ -1,0 +1,15 @@
+{
+	"encoder": {
+		"input_dim": 300,
+		"hidden_dim": 300,
+		"n_layers": 2
+	},
+
+	"token_embedder": {
+		"word_dim": 300,
+		"gaz_dim": 200
+	},
+	
+	"dropout": 0.1,
+	"dropout_gaz": 0.1
+}
