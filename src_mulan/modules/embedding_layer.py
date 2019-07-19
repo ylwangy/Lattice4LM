@@ -12,10 +12,6 @@ class EmbeddingLayer(nn.Module):
     super(EmbeddingLayer, self).__init__()
     if embs is not None:
       embwords, embvecs = embs
-      # for word in embwords:
-      #  assert word not in word2id, "Duplicate words in pre-trained embeddings"
-      #  word2id[word] = len(word2id)
-
       logging.info("{} pre-trained word embeddings loaded.".format(len(word2id)))
       if n_d != len(embvecs[0]):
         logging.warning("[WARNING] n_d ({}) != word vector size ({}). Use {} for embeddings.".format(
